@@ -9,6 +9,7 @@ class CMSAdminCategoryController extends AdminComponent {
   public $model_class = 'WildfireCategory';
   public $display_name = "Site Categories";
   public $dashboard = false;
+  public $singular = "Category";
 
 }
 
