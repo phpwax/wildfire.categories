@@ -10,7 +10,7 @@ class WildfireCategory extends WaxModel {
    * setup the columns, fields, relationships etc
    */
   public function setup(){
-    $this->define("title", "CharField", array('export'=>true, 'maxlength'=>255, 'scaffold'=>true, 'group'=>'content') );
+    $this->define("title", "CharField", array('export'=>true, 'maxlength'=>255, 'scaffold'=>true, 'group'=>'content', 'primary_group'=>1) );
     $this->define("url", "CharField", array('export'=>true, 'maxlength'=>255, 'scaffold'=>true, 'editable'=>false));
     $this->define("content", "ManyToManyField", array('target_model'=>"WildfireContent", 'editable'=>false));
     parent::setup();
